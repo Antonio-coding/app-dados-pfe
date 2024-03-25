@@ -11,7 +11,7 @@ export const Dado = ({ valor }) => {
   // return <h2>{valor}</h2>;
   return (
     <div>
-      <img className="w-16" src={dados[valor - 1]} alt="Dado" />
+      <img className="w-[15rem]" src={dados[valor - 1]} alt="Dado" />
       <h2>Dado = {valor}</h2>
     </div>
   );
