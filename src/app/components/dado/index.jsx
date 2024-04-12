@@ -1,3 +1,5 @@
+import { Styles } from "@/app/(pages)/game-page/style";
+
 const dados = [
   "https://cdn.glitch.global/d06ef131-6a92-4c03-9b83-0c7f07ea77eb/dado1.png?v=1709855087643",
   "https://cdn.glitch.global/d06ef131-6a92-4c03-9b83-0c7f07ea77eb/dado2.png?v=1709855088164",
@@ -12,7 +14,7 @@ export const Dado = ({ valor }) => {
   return (
     <div>
       <img className="w-[15rem]" src={dados[valor - 1]} alt="Dado" />
-      <h2>Dado = {valor}</h2>
+      <h2 className={Styles.text}>Dado = {valor}</h2>
     </div>
   );
 };
